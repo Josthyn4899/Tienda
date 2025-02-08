@@ -4,12 +4,46 @@
     background: purple;
     
 }
+.parrafoRojo{
+    color: red;
+    
+}
+
 .parrafoVerde{
     color: green;
     
 }
+/*Selector de elentos
+p,h1,div(
+background-color: antiquewhite;
+) */
 
-.parrafoRojo{
-    color: red;
+.ekemploPadding{
+    /*a los 4 lados*/
+    padding: 10px;
+    /*Arriba y abajo- Izquierda y derecha*/
+    padding: 10px 20px;
+    /*Arriba - Izquierda/Derecha - Abajo*/
+    padding: 10px 20px 30px;
+    /*Arriba - Derecha -Abajo - Izquierda*/
+    padding: 10px 20px 30px 40px;
+        
+        margin-botton: 20px;
     
+}
+a{
+    font-size: 20px;
+}
+
+a:visited{
+    color: green;
+   
+}
+a:hover{
+    color: red;
+    transition: 1s;
+}
+a:active{
+    color: white;
+    background: black;
 }
