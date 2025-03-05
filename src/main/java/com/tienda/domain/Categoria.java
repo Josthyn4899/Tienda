@@ -3,6 +3,7 @@ package com.tienda.domain;
 
 import java.io.Serializable;
 import jakarta.persistence.*;
+import java.util.List;
 import lombok.Data;
 
 @Data //Generar por denajo los set y get
@@ -20,6 +21,9 @@ public class Categoria implements Serializable{
     private String rutaImagen;
     private boolean activo;
     
+    @OneToMany
+    @JoinColumn(name = "idCategoria", insertable = false)
+    private List<Producto>productos;
     public Categoria(){}
     
     public Categoria(String descripcion, String rutaImagen, boolean activo){
